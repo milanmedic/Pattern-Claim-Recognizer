@@ -7,13 +7,11 @@ import (
 )
 
 type ClaimReader struct {
-	path     string
 	filename string
 }
 
 func (cr ClaimReader) ReadClaims() []Claim {
-	path := cr.path + cr.filename
-	var file File = File{name: path}
+	var file File = File{name: cr.filename}
 	file.OpenFile()
 	allContent := file.ReadFile()
 	claims := ExtractClaims(allContent)

@@ -6,4 +6,8 @@ Used for exercising my Golang skills.
 # How to Run?
 Just use `chmod +x compile.sh` to create an executable shell script.
 Then run `./compile.sh`.
-After that run `./main`.
+After that run `./main path/filename`.
+
+# TODO:
+ * Expose through an API endpoint
+ * Refactor and create a more coherent project structure
